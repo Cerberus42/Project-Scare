@@ -1,0 +1,26 @@
+    var vectorArray : Vector3[] = new Vector3[1000];
+    var currentArrayPos : int = 0;
+     
+    private var body : Rigidbody;
+  void OnTriggerEnter  () {
+        if(Time.deltaTime = 0.f){
+            print(currentArrayPos.ToString);
+            currentArrayPos = 0;
+            vectorArray[currentArrayPos] = Input.mousePosition;
+            currentArrayPos++;
+            
+        } else if (Time.deltaTime = 1.0f){
+            print(currentArrayPos.ToString);
+            vectorArray[currentArrayPos] = Input.mousePosition;
+            currentArrayPos++;
+            if (vectorArray[currentArrayPos] => 600){
+              enemy1 = 3;
+              }
+            if (vectorArray[currentArrayPos] <= 400){
+              enemy1 = 1;
+              }
+             else (){
+              enemy1 = 2;
+             }
+        }
+        
